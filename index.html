@@ -26,6 +26,28 @@
         .option {
             margin-bottom: 10px;
         }
+        div {
+        /* Something */
+            font-family: Verdana;
+            color: #FFFFFF;
+            text-align: right;
+            padding: 10px;
+        }
+        select {
+        /* Styles for the dropdown container */
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+            color: #333;
+            font-size: 16px;
+        }
+        option {
+        /* Styles for each dropdown option */
+            background-color: #f5f5f5;
+            color: #333;
+        }
     	</style>
         <script src="options.js" defer></script>
 </head>
@@ -36,11 +58,12 @@
     </header>
     <!-- Rest of the content -->
     <div id="container">
-        <h2>Enchantment Selector</h2>
-        <div 
-            style="
+        <h2 style="
                 color: #FFFFFF"
-            id="options-container">
+                >
+            Enchantment Selector
+        </h2>
+        <div id="options-container">
           <div class="option">
             <input type="text" placeholder="Option 1" class="option-input">
             <select class="element-select">
