@@ -5,23 +5,25 @@
   
   .dropdown-toggle {
     padding: 10px;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
+    background-color: #000000;
+    border: 1px solid #000000;
     border-radius: 4px;
     cursor: pointer;
+    color: #FFFFFF;
   }
   
   .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
+    background-color: #000000;
+    border: 1px solid #000000;
     border-top: none;
     border-radius: 4px;
     max-height: 200px;
     overflow-y: auto;
     display: none;
+    color: #FFFFFF;
   }
   
   .dropdown-menu ul {
@@ -32,6 +34,7 @@
   
   .dropdown-menu li {
     padding: 8px;
+    color: #FFFFFF;
   }
   
   .dropdown.open .dropdown-menu {
