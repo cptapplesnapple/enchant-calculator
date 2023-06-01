@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Header with Multiple Styles</title>
+  	<style>
+  	  	body {
+    		background-color: #1F1F1F;
+      	}
+      	/* Styling for the header element */
+      	header {
+      		font-family: Verdana;
+        	color: #FFFF;
+        	padding: 30px;
+        	text-align: center;
+      	}
+      	/* Styling for the h1 heading within the header */
+      	header h1 {
+        	font-size: 24px;
+        	margin: 0;
+      	}
+      	/* Styling for the paragraph within the header */
+      	header p {
+        	font-size: 12px;
+        	margin: 10px 0;
+      	}
+        .option {
+            margin-bottom: 10px;
+        }
+    	</style>
+        <script src="options.js" defer></script>
+</head>
+<body>
+	<header>
+    <h1>Enchantment Calculator</h1>
+    <p>Use this to calculate the most optimal<br>method of enchanting items</p>
+    </header>
+    <!-- Rest of the content -->
+    <div id="container">
+        <h2>Options</h2>
+        <div id="options-container">
+          <div class="option">
+            <input type="text" placeholder="Option 1" class="option-input">
+            <select class="element-select">
+              <option value="">Select an element</option>
+              <option value="Element 1">Element 1</option>
+              <option value="Element 2">Element 2</option>
+              <option value="Element 3">Element 3</option>
+            </select>
+          </div>
+        </div>
+        <button onclick="addOption()">Add Option</button>
+        <button onclick="removeOption()">Remove Option</button>
+        <button onclick="getSelectedElements()">Get Selected Elements</button>
+      </div>
+</body>
+</html>
