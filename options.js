@@ -25,3 +25,9 @@ function updateOptions() {
 function getSelectedElements() {
   // Get selected elements logic
 }
+
+function toggleDropdown() {
+    var dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('open');
+  }
+  
