@@ -1,4 +1,8 @@
-var availableEnchants = ['Element 1', 'Element 2', 'Element 3'];
+var availableEnchants = [
+  'Element 1',
+  'Element 2',
+  'Element 3'
+];
 var availableLevels = [1,2,3,4,5];
 var selectedEnchants = {};
 
