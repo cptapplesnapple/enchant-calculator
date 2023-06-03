@@ -43,6 +43,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  width: auto;
   background-color: #000000;
   border: 1px solid #000000;
   border-top: none;
@@ -85,4 +86,9 @@
 
 .dropdown-toggle:focus {
   outline: none;
+}
+
+.dropdown .dropdown-text {
+  font-family: Verdana;
+  color: #FFFFFF;
 }
