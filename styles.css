@@ -38,7 +38,7 @@
   color: #FFFFFF;
 }
 
-.dropdown-menu {
+.dropdown .dropdown-menu {
   font-family: Verdana;
   position: absolute;
   top: 100%;
