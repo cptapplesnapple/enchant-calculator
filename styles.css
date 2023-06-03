@@ -1,11 +1,12 @@
 /*Box*/
 .box {
   background-color: #1F1F1F;
+  border: 3px solid #FFFFFF;
   border-radius: 10px;
   padding: 20px;
 }
 
-.box h1 {
+/* .box h1 {
   color: #FFFFFF;
   font-size: 24px;
   margin: 0;
@@ -15,7 +16,7 @@
   color: #FFFFFF;
   font-size: 12px;
   margin: 10px 0;
-}
+} */
 
 /*Dropdown*/
 .dropdown {
