@@ -30,7 +30,6 @@
 }
 
 .dropdown-toggle {
-  font: Verdana;
   padding: 10px;
   background-color: #000000;
   border: 1px solid #000000;
@@ -40,6 +39,7 @@
 }
 
 .dropdown-menu {
+  font-family: Verdana;
   position: absolute;
   top: 100%;
   left: 0;
