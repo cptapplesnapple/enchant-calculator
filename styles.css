@@ -1,9 +1,10 @@
 /*Box*/
 .box {
-  background-color: #1F1F1F;
-  border: 3px solid #FFFFFF;
-  border-radius: 10px;
+  border-radius: 25px;
+  border: 4px solid #818181;
   padding: 20px;
+  height: auto;
+  width: auto;
 }
 
 /* .box h1 {
