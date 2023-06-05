@@ -30,12 +30,18 @@
   font-family: Arial;
 }
 
+.dropdown-text {
+  color: #ffffff;
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
 .dropdown select {
   display: none; /*hide original SELECT element:*/
 }
 
 .select-selected {
   background-color: #000000;
+  border-radius: 25px;
 }
 
 /*style the arrow inside the select element:*/
@@ -64,6 +70,7 @@
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
   user-select: none;
+  border-radius: 25px;
 }
 
 /*style items (options):*/
@@ -74,6 +81,7 @@
   left: 0;
   right: 0;
   z-index: 99;
+  border-radius: 25px;
 }
 
 /*hide the items when the select box is closed:*/
