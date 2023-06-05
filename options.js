@@ -1,3 +1,4 @@
+console.log("Script loaded");
 var allEnchants = [
     'Aqua Affinity',
     'Bane of Arthropods',
