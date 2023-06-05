@@ -51,11 +51,10 @@
 
 /*style the arrow inside the select element:*/
 .select-selected:after {
-  position: absolute;
+  position: relative;
   content: "";
-  top: 14px;
-  right: 10px;
-  transform: translateY(-50%);
+  top: 15px;
+  right: -6px;
   width: 0;
   height: 0;
   border: 6px solid transparent;
@@ -64,8 +63,9 @@
 
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
+  position: relative;
   border-color: transparent transparent #fff transparent;
-  top: 7px;
+  top: -12px;
 }
 
 /*style the items (options), including the selected item:*/
@@ -82,7 +82,7 @@
 /*style items (options):*/
 .select-items {
   position: absolute;
-  background-color: DodgerBlue;
+  background-color: #000000;
   top: 100%;
   left: 0;
   right: 0;
