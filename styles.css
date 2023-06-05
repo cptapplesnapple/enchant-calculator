@@ -27,21 +27,26 @@
 /*the container must be positioned relative:*/
 .dropdown {
   position: relative;
-  font-family: Arial;
+  font-family: Verdana;
+  display: flex; /* Add flex display */
+  align-items: center; /* Vertically center the content */
 }
 
 .dropdown-text {
   color: #ffffff;
   margin-right: 10px; /* Adjust the spacing as needed */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .dropdown select {
   display: none; /*hide original SELECT element:*/
+  margin-left: auto;
 }
 
 .select-selected {
   background-color: #000000;
-  border-radius: 25px;
+  border-radius: 5px;
+  position: relative;
 }
 
 /*style the arrow inside the select element:*/
@@ -50,6 +55,7 @@
   content: "";
   top: 14px;
   right: 10px;
+  transform: translateY(-50%);
   width: 0;
   height: 0;
   border: 6px solid transparent;
@@ -70,7 +76,7 @@
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
   user-select: none;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*style items (options):*/
@@ -81,7 +87,7 @@
   left: 0;
   right: 0;
   z-index: 99;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /*hide the items when the select box is closed:*/
