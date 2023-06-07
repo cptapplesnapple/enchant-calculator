@@ -24,28 +24,42 @@
   height: auto;
   width: auto;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box sections {
+  display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.box-text {
+.box display-text {
   font-family: Verdana;
   color: #ffffff;
-  margin-right: 10px; /* Adjust the spacing as needed */
-  white-space: nowrap; /* Prevent text from wrapping */
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 460px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    align-content: flex-end;
+  }
 }
 
 /*Dropdown Menu*/
-/*the container must be positioned relative:*/
 .dropdown {
   position: relative;
   font-family: Verdana;
-  display: flex; /* Add flex display */
-  align-items: center; /* Vertically center the content */
+  display: flex;
+  align-items: center;
 }
 
 .dropdown select {
-  display: none; /*hide original SELECT element:*/
+  display: none;
   margin-left: auto;
 }
 
@@ -56,7 +70,6 @@
   white-space: nowrap;
 }
 
-/*style the arrow inside the select element:*/
 .select-selected:after {
   position: relative;
   content: "";
@@ -68,14 +81,12 @@
   border-color: #fff transparent transparent transparent;
 }
 
-/*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
   position: relative;
   border-color: transparent transparent #fff transparent;
   top: -12px;
 }
 
-/*style the items (options), including the selected item:*/
 .select-items div,.select-selected {
   color: #ffffff;
   padding: 8px 16px;
@@ -86,7 +97,6 @@
   border-radius: 5px;
 }
 
-/*style items (options):*/
 .select-items {
   position: absolute;
   background-color: #000000;
@@ -97,7 +107,6 @@
   border-radius: 5px;
 }
 
-/*hide the items when the select box is closed:*/
 .select-hide {
   display: none;
 }
