@@ -7,10 +7,12 @@
 }
 .title h1{
   font-size: 24px;
+  color: #FFFFFF;
   margin: 0;
 }
 .title p{
   font-size: 12px;
+  color: #FFFFFF;
   margin: 10px 0;
 }
 
@@ -21,6 +23,16 @@
   padding: 20px;
   height: auto;
   width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box-text {
+  font-family: Verdana;
+  color: #ffffff;
+  margin-right: 10px; /* Adjust the spacing as needed */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 /*Dropdown Menu*/
@@ -30,12 +42,6 @@
   font-family: Verdana;
   display: flex; /* Add flex display */
   align-items: center; /* Vertically center the content */
-}
-
-.dropdown-text {
-  color: #ffffff;
-  margin-right: 10px; /* Adjust the spacing as needed */
-  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .dropdown select {
