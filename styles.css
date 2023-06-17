@@ -39,7 +39,7 @@
 }
 .box display-text {
   font-family: Verdana;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-right: 10px;
   white-space: nowrap;
 }
@@ -82,17 +82,17 @@
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+  border-color: #FFFFFF transparent transparent transparent;
 }
 
 .select-selected.select-arrow-active:after {
   position: relative;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent #FFFFFF transparent;
   top: -12px;
 }
 
 .select-items div,.select-selected {
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 8px 16px;
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -117,4 +117,29 @@
 
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.buttonP{
+  background-color: #4CAF50;
+}
+.buttonM{
+  background-color: #Be2528;
+}
+.buttonP:active{
+  background-color: #38823a;
+}
+.buttonM:active{
+  background-color: #961b1d;
 }
