@@ -149,18 +149,31 @@ function jsFunction(value) {
   }
   body.style.backgroundColor = color; // Set the background color
 }
+
 function duplicateBox() {
   if (currNumBox < maxBox){
-    var original = document.getElementById('box');
-    var clone = original.cloneNode(true);
-    clone.id = "box1" + ++currNumBox; 
-    original.parentNode.appendChild(clone);
+    const mButton = document.getElementById("mButton")
+    const box = document.getElementById("box");
+    var clone = box.cloneNode(true);
+    document.querySelector(".container").appendChild(clone);
+    currNumBox++;
+    mButton.style.display = "block";
+    if (currNumBox == maxBox){
+      const pButton = document.getElementById("pButton")
+      pButton.style.display = "none";
+    }
   }
 }
 function removeBox() {
   if (currNumBox > 1){
-    const box = document.getElementById('box');
-    document.parentNode.removeChild(box);
+    const myDiv = document.getElementById("box");
+    const pButton = document.getElementById("pButton")
+    document.querySelector(".container").removeChild(myDiv);
     currNumBox--;
+    pButton.style.display = "block";
+    if (currNumBox <= 1){
+      const mButton = document.getElementById("mButton")
+      mButton.style.display = "none";
+    }
   }
 }
